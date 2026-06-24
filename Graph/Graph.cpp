@@ -1,12 +1,12 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-#define MaxFarmSize 11
-
 #include <iostream>
 
 using namespace std;
 
 int Width, Height, CabbageCount;
+
+const int MaxFarmSize = 11;
 
 int Farm[MaxFarmSize][MaxFarmSize];
 
@@ -77,5 +77,5 @@ int main()
 
 	FindDFS();
 
-	printf("%d\n", Count);
+	cout << Count << endl;;
 }
