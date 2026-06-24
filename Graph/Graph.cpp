@@ -35,14 +35,14 @@ void PrintShortestPath(int Start, int Dest)
 	}
 	vector<int> FastPath = {};
 
-	int Cur = Dest;
+	int Current = Dest;
 
-	FastPath.push_back(Cur);
+	FastPath.push_back(Current);
 
-	while (Cur != Start)
+	while (Current != Start)
 	{
-		Cur = Parent[Cur];
-		FastPath.push_back(Cur);
+		Current = Parent[Current];
+		FastPath.push_back(Current);
 	}
 
 	reverse(FastPath.begin(), FastPath.end());
